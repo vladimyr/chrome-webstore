@@ -1,17 +1,14 @@
 'use strict';
 
-var cws = require('../index.js');
-var client;
+const cws = require('../index.js');
 
 // Kippt extension id
-var exampleId = 'pjldngiecbcfldpghnimmdelafenmbni';
-var targetId = process.argv[2] || exampleId;
+let exampleId = 'pjldngiecbcfldpghnimmdelafenmbni';
+let targetId = process.argv[2] || exampleId;
 
 cws.getVersion()
-  .then(function obtained(version) {
-    client = cws.createClient(version);
+  .then(version => {
+    let client = cws.createClient(version);
     return client.getItemInfo(targetId);
   })
-  .then(function complete(info) {
-    console.log(JSON.stringify(info, null, 2));
-  });
+  .then(info => console.log(JSON.stringify(info, null, 2)));
