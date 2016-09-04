@@ -1,5 +1,5 @@
 {
-  "name": "chrome-webstore-query",
+  "name": "chrome-webstore",
   "version": "0.1.1",
   "description": "Query Chrome Webstore from Node.js",
   "main": "index.js",
@@ -20,13 +20,13 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vladimyr/chrome-webstore-query/issues"
+    "url": "https://github.com/vladimyr/chrome-webstore/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/vladimyr/chrome-webstore-query.git"
+    "url": "git://github.com/vladimyr/chrome-webstore.git"
   },
-  "homepage": "https://github.com/vladimyr/chrome-webstore-query",
+  "homepage": "https://github.com/vladimyr/chrome-webstore",
   "dependencies": {
     "cheerio": "^0.22.0",
     "debug": "^2.2.0",
